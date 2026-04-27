@@ -11,4 +11,5 @@ A Dumb Virtual CPU
 | 0011 | PSH | pushes the registers to the stack and writes the next address to REG D | N/A | N/A | N/A |
 | 0100 | POP | pops the register values from the stack and overwrites the registers | N/A | N/A | N/A |
 | 0101 | INP | if there is an input, reads it from it's buffer into a register | Input Buf # | REG, 0-3 is A-D | N/A |
-| 0110 | OUT | push a register value into an output buffer | 
+| 0110 | OUT | push a register value into an output buffer | Output Buf # | REG, 0-3 is A-D | N/A |
+| 0111 | RAA | adds a value to the specified register and skips the next line if no carry | REG, 0-3 is A-D | VAL pt-1 | VAL pt-2 |
